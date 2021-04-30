@@ -1,0 +1,1 @@
+function topFunction(){document.body.scrollTop=57,document.documentElement.scrollTop=57}
