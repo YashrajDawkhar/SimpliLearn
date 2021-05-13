@@ -1,8 +1,8 @@
 {
   "name": "SimpliLearn",
   "short_name": "SimpliLearn",
-  "theme_color": "#1976d2",
-  "background_color": "#fafafa",
+  "theme_color": "#0d0036",
+  "background_color": "#ffffff",
   "display": "standalone",
   "scope": "./",
   "start_url": "./",
