@@ -1,7 +1,7 @@
 {
   "name": "SimpliLearn",
   "short_name": "SimpliLearn",
-  "theme_color": "darkorange",
+  "theme_color": "white",
   "background_color": "#ffffff",
   "display": "standalone",
   "scope": "./",
