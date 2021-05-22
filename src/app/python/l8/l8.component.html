@@ -1,0 +1,199 @@
+<div class="containercss">
+    <div class="item1" id="item-leftbox">
+        <app-desktop-nav></app-desktop-nav>
+    </div>
+
+    <div class="item2">
+        <div class="item2-div" id="item2-div-1">
+            <i class="bi bi-house svgcss" style="float:left;margin-left:20px;" routerLink="/Home"></i>
+
+            Selection Statements
+                  <a class="bi bi-list svgcss" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                          aria-controls="offcanvasExample" style="float:right;margin-right:15px;">
+                  </a>
+
+           
+        </div>
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+
+            <app-mobile-nav></app-mobile-nav>
+
+        </div>
+
+        <div class="item2-div">
+            <h3 id="titlepadding">Selection / Conditional Branching Statements :</h3>
+            <div class="codepadding">
+                <ol>
+                    <li>The selection or conditional branching statements are used as decision making statements.</li>
+                    <li>Types of selection statements 
+                        <ul type="square">
+                            <li><span class="dec" >if statement</span></li>
+                            <li><span class="dec" >if-else statement</span></li>
+                            <li><span class="dec">Nested if statement</span></li>
+                            <li><span class="dec">if-elif-else statement</span></li>
+                        </ul>
+                    </li>
+                </ol>
+    
+    
+            </div>
+        </div>
+            
+        <div class="item2-div" >
+                <h3 id="titlepadding">if Statements :</h3>
+                <div class="codebox">
+                    <pre>
+    <span class="atv"># Write python program to print even odd number</span>
+    <span class="str">n</span><span class="pun">=</span><span class="str">int</span><span class="pln">(</span><span class="str"></span><span class="str">input</span><span class="pln">(</span><span class="tag">"Enter value of n : "</span><span class="pln">))</span>
+    
+    <span class="pln">if</span> <span class="str">n</span><span class="pun">%</span><span class="str">2</span><span class="pun">==</span><span class="str">0</span><span class="pun">:</span>
+       <span class="dec">print</span><span class="pln">(</span><span class="tag">"Even Number"</span><span class="pln">)</span>
+    <span class="pln">if</span> <span class="str">n</span><span class="pun">%</span><span class="str">2</span><span class="pun">==</span><span class="str">2</span><span class="pun">:</span>
+       <span class="dec">print</span><span class="pln">(</span><span class="tag">"Odd Number"</span><span class="pln">)</span></pre>
+     </div>  
+            <h3 id="titlepadding">Output:</h3>
+            <div class="codepadding">
+                <p>Enter value of n : 5<br> Odd Number</p>
+                </div>
+                <h5 id="notepadding">Note :</h5>
+            <div class="notediv">
+                <ol type="a">
+                    <li><b>if statement</b> is used to test particular condition.</li>
+                    <li>If the condition is true then it executes the block of statements which is called as <span class="atn">if block</span>.</li>
+                    <li>The if statements is simplest form of the conditional statement.</li>
+                    <li><b>Syntax:</b>
+                          <pre>  <span class="pln">if condition</span>:
+                   <span class="dec">statement</span>
+                    </pre></li>
+                </ol>
+            </div>
+            <br>
+        </div>
+    
+        <div class="item2-div" >
+            <h3 id="titlepadding">if-else Statements :</h3>
+            <div class="codebox">
+                <pre>
+    <span class="atv"># Write python program to print even odd number</span>
+    <span class="str">n</span><span class="pun">=</span><span class="str">int</span><span class="pln">(</span><span class="str"></span><span class="str">input</span><span class="pln">(</span><span class="tag">"Enter value of n : "</span><span class="pln">))</span>
+    
+    <span class="pln">if</span> <span class="str">n</span><span class="pun">%</span><span class="str">2</span><span class="pun">==</span><span class="str">0</span><span class="pun">:</span>
+       <span class="dec">print</span><span class="pln">(</span><span class="tag">"Even Number"</span><span class="pln">)</span>
+    <span class="pln">else</span><span class="pun">:</span>
+       <span class="dec">print</span><span class="pln">(</span><span class="tag">"Odd Number"</span><span class="pln">)</span></pre>
+    </div>  
+        <h3 id="titlepadding">Output:</h3>
+        <div class="codepadding">
+            <p>Enter value of n : 5<br> Odd Number</p>
+            </div>
+            <h5 id="notepadding">Note :</h5>
+        <div class="notediv">
+            <ol type="a">
+                <li>The if-else statement provides an else block combined with the if statement which is executed in the false case of the condition.</li>
+                <li>If the condition is true then the <span class="atn">if-block </span>it executed.</li>
+                <li>Otherwise , the <span class="atn">else-block </span>is executed.</li>
+                <li><b>Syntax:</b>
+                      <pre>  <span class="pln">if condition</span>:
+                   <span class="dec">statement</span>
+      <span class="pln">else</span>:
+                   <span class="dec">statement</span>
+                </pre></li>
+            </ol>
+        </div>
+        <br>
+        </div>
+    
+        <div class="item2-div" >
+        <h3 id="titlepadding">Nested if Statements :</h3>
+        <div class="codebox">
+            <pre>
+    <span class="atv"># Write python program to compare two numbers using nested condition.</span>
+    <span class="str">a</span><span class="pun">=</span><span class="str">int</span><span class="pln">(</span><span class="str"></span><span class="str">input</span><span class="pln">(</span><span class="tag">"Enter value of a : "</span><span class="pln">))</span>
+    <span class="str">b</span><span class="pun">=</span><span class="str">int</span><span class="pln">(</span><span class="str"></span><span class="str">input</span><span class="pln">(</span><span class="tag">"Enter value of b : "</span><span class="pln">))</span>
+    
+    <span class="pln">if</span> <span class="str">a</span><span class="pun">==</span><span class="str">b</span><span class="pun">:</span>
+       <span class="dec">print</span><span class="pln">(</span><span class="tag">"Both the numbers are equal "</span><span class="pln">)</span>
+    <span class="pln">else</span><span class="pun">:</span>
+       <span class="pln">if</span> <span class="str">a</span><span class="pun">&lt;</span><span class="str">b</span><span class="pun">:</span>
+          <span class="dec">print</span><span class="pln">(</span><span class="tag">"a is less than b"</span><span class="pln">)</span>
+       <span class="pln">else</span><span class="pun">:</span>
+          <span class="pln">if</span> <span class="str">a</span><span class="pun">&gt;</span><span class="str">b</span><span class="pun">:</span>
+             <span class="dec">print</span><span class="pln">(</span><span class="tag">"a is greater than b"</span><span class="pln">)</span></pre>
+     </div>
+    <h3 id="titlepadding">Output:</h3>
+    <div class="codepadding">
+        <p>Enter value of a : 5<br>Enter value of b : 4<br> a is greater than b </p>
+        </div>
+        <h5 id="notepadding">Note :</h5>
+    <div class="notediv">
+        <ol type="a">
+            <li>When one if condition is present inside another if then it is called <b class="atn">Nested if</b> conditions. </li>
+            <li>Any nuber of these statements can be nested inside one another.</li>
+            <li>Indentation is the only way to figure out the level of nesting.</li>
+            <li><b>Syntax:</b>
+                  <pre>  <span class="pln">if condition</span>:
+               <span class="dec">statement</span>
+      <span class="pln">else</span>:
+              <span class="pln">if condition</span>:
+                         <span class="dec">statement</span>
+              <span class="pln">else</span>:
+                         <span class="pln">if condition</span>:
+                                    <span class="dec">statement</span>
+            </pre></li>
+        </ol>
+    </div>
+    <br>
+        </div>
+    
+        <div class="item2-div" >
+            <h3 id="titlepadding">if-elif-else Statements :</h3>
+            <div class="codebox">
+                <pre>
+    <span class="atv"># Write a python program to display the result such as destinction , <br> first class, second class , pass or fail based on the marks entered by the user </span>
+    <span class="str">n</span><span class="pun">=</span><span class="str">int</span><span class="pln">(</span><span class="str"></span><span class="str">input</span><span class="pln">(</span><span class="tag">"Enter your marks : "</span><span class="pln">))</span>
+    
+    <span class="pln">if</span> <span class="str">n</span><span class="pun">&gt;=</span><span class="str">75</span><span class="pun">:</span>
+       <span class="dec">print</span><span class="pln">(</span><span class="tag">"Grade: Distinction"</span><span class="pln">)</span>
+    <span class="pln">elif</span> <span class="str">n</span><span class="pun">&gt;=</span><span class="str">60</span><span class="pun">:</span>
+       <span class="dec">print</span><span class="pln">(</span><span class="tag">"Grade: First Class"</span><span class="pln">)</span>
+    <span class="pln">elif</span> <span class="str">n</span><span class="pun">&gt;=</span><span class="str">50</span><span class="pun">:</span>
+       <span class="dec">print</span><span class="pln">(</span><span class="tag">"Grade: Second Class"</span><span class="pln">)</span>
+    <span class="pln">elif</span> <span class="str">n</span><span class="pun">&gt;=</span><span class="str">40</span><span class="pun">:</span>
+       <span class="dec">print</span><span class="pln">(</span><span class="tag">"Grade: Pass"</span><span class="pln">)</span>
+    <span class="pln">else</span><span class="pun">:</span>
+       <span class="dec">print</span><span class="pln">(</span><span class="tag">"Grade: Fail"</span><span class="pln">)</span></pre>
+    </div>  
+        <h3 id="titlepadding">Output:</h3>
+        <div class="codepadding">
+            <p>Enter your marks : 45<br>Grade: Pass</p>
+            </div>
+            <h5 id="notepadding">Note :</h5>
+        <div class="notediv">
+            <ol type="a">
+                <li>Sometimes there are more than two possibilities. This possibilities can be expressed using chained conditions.</li>
+                <li>The <span class="atn">elif</span> is basically abbreviation of <span class="atn">else if</span>.</li>
+                <li>There is no limit on the number of elif statemets </li>
+                <li>If there is <span class="atn">else</span> clause then it should be at the end</li>
+                <li><b>Syntax:</b>
+                      <pre>  <span class="pln">if condition</span>:
+               <span class="dec">statement</span>
+      <span class="pln">elif condition</span>:
+               <span class="dec">statement</span>
+       ....
+      <span class="pln">else</span>:
+               <span class="dec">statement</span>
+                </pre></li>
+            </ol>
+        </div>
+        <br>
+        </div>
+       
+
+        
+
+
+
+    </div>
+</div>

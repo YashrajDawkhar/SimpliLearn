@@ -1,0 +1,417 @@
+* {
+  margin: 0px;
+}
+
+/* For Laptop Screen */
+
+@media all and (min-width:929px) {
+  .hidemobile{
+    display: none;
+  }
+  .hidetab{
+    display: none;
+  }
+  .hidedekstop{
+    display: block;
+  }
+  .LaptopContainer1 {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+   background-color: #fffdf5f7;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    
+  }
+  .LaptopContainer1a{
+    height:fit-content;
+    width:43vw;
+   margin-top: 20px;
+   margin-bottom:36px;
+  }
+  .LaptopContainer1b{
+    height:fit-content;
+    width:48vw;
+    
+    font-family: "Chelsea Market", cursive;
+    top:0px;
+    position: relative;
+    
+  }
+  .LaptopContainer2 {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+  }
+  .LaptopContainer2a{
+    width:450px;
+    height:270px;
+    background-color: yellow;
+    margin:20px 20px;
+    border-radius:20px;
+    box-shadow:0px 3px 4px rgb(148, 141, 141);
+  }
+  .LaptopContainer2a:hover{
+    box-shadow:0px 3px 14px rgb(148, 141, 141);
+  }
+  .LaptopContainer3 {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+   background-color: #dbfefff7;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    
+  }
+  .LaptopContainer3a{
+    height:fit-content;
+    width:40vw;
+   margin-top: 20px;
+   margin-bottom:36px;
+  }
+  .LaptopContainer3b{
+    height:fit-content;
+    width:50vw;
+    
+    font-family: "Chelsea Market", cursive;
+    top:0px;
+    position: relative;
+    
+  }
+  .LaptopContainer4 {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+  }
+  .LaptopContainer4a{
+    width:450px;
+    height:450px;
+    /* background-color: yellow; */
+    margin:20px 20px;
+    border-radius:50%;
+    box-shadow:0px 3px 4px rgb(148, 141, 141);
+  }
+  .LaptopContainer4a:hover{
+    box-shadow:0px 3px 14px rgb(148, 141, 141);
+  }
+  .LaptopContainer5 {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+   background-color: #dbeffff7;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    
+  }
+  .LaptopContainer5a{
+    height:fit-content;
+    width:43vw;
+   margin-top: 20px;
+   margin-bottom:36px;
+  }
+  .LaptopContainer5b{
+    height:fit-content;
+    width:48vw;
+    
+    font-family: "Chelsea Market", cursive;
+    top:0px;
+    position: relative;
+    
+  }
+  .LaptopContainer6 {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+  }
+  .LaptopContainer6a{
+    width:380px;
+    height:220px;
+    
+    margin:20px 20px;
+    border-radius:20px;
+    box-shadow:0px 3px 4px rgb(148, 141, 141);
+  }
+  .LaptopContainer6a:hover{
+    box-shadow:0px 3px 14px rgb(148, 141, 141);
+  }
+  .Laptopfooter{
+    display: flex;
+    height:fit-content;
+    background-color: #000000;
+    width:100%;
+    justify-content: center;
+    color: white;
+    padding:10px 0px;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size:20px;
+
+  }
+}
+
+/* For tab Screen */
+
+@media all and (max-width: 929px) {
+  .hidemobile{
+    display: none;
+  }
+  .hidetab{
+    display: block;
+  }
+  .hidedekstop{
+    display: none;
+  }
+  .tabnavhome {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    top:0px;
+    position: sticky;
+    z-index: 1;
+    /* background: linear-gradient(to right, #faa32a, #ff2424, #a936f5); */
+    color: white;
+    font-family: "Bubblegum Sans", cursive;
+    font-size: 30px;
+    height: 57px;
+    background-color: orange;
+    box-shadow:0px 1px 3px rgb(255, 188, 65);
+    
+  }
+  .tabContainer2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: fit-content;
+    /* background-color: #e9ecefd7; */
+    background-color: #fffdf5f7;
+    
+  }
+  .tabContainer2a {
+    width: 60vw;
+    height: fit-content;
+    margin-top:20px;
+  }
+  .tabContainer3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: fit-content;
+    background-color: #fffdf5f7;
+    /* background-color: #e3f1ffd0; */
+  }
+  .tabContainer3a {
+    width: 94vw;
+    height: fit-content;
+    font-family: "Chelsea Market", cursive;
+  }
+  .tabContainer4{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-content: space-around;
+    width: 100vw;
+    height:fit-content;
+    
+    
+  }
+  .tabContainer4a {
+      width:150px;
+      height:183px;
+      /* background-color: white; */
+      /* margin-top:20px; */
+      margin:18px;
+      box-shadow:0px 1px 3px rgb(110, 110, 110);
+      
+  }
+  .tabContainer5{
+    display:flex;
+    flex-direction:row;
+    width:100vw;
+    height:fit-content;
+    /* background-color: #dfe3e7e7; */
+    justify-content: center;
+    align-items: center;
+    margin-top:10px;
+  }
+  .tabContainer5a{
+    width:315px;
+    height:150px;
+    background-color: white;
+    border-radius:15px;
+    box-shadow:0px 1px 2px rgb(122, 122, 122);
+  }
+  .tabfooter{
+    display: flex;
+    height:fit-content;
+    background-color: #000000;
+    width:100vw;
+    justify-content: center;
+    color: white;
+    padding:10px 0px;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+}
+
+/* For mobile screen */
+@media all and (max-width: 427px) {
+  .hidemobile{
+    display:block;
+  }
+  .hidetab{
+    display: none;
+  }
+  .hidedekstop{
+    display: none;
+  }
+  .mobilenavhome {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    top:0px;
+    position: sticky;
+    z-index: 1;
+    /* background: linear-gradient(to right, #faa32a, #ff2424, #a936f5); */
+    background-color: orange;
+    box-shadow:0px 1px 3px rgb(255, 188, 65);
+    color: white;
+    font-family: "Bubblegum Sans", cursive;
+    font-size: 30px;
+    height: 57px;
+    
+  }
+  .MobileContainer1 {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.7) 100%
+      ),
+      url(/assets/Home/Mobile/banner.png);
+    height: 35vh;
+    background-attachment: static;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #bannerinfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 200px;
+    color: white;
+    font-size: 23px;
+    font-family: "Merienda One", cursive;
+  }
+  .MobileContainer2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: fit-content;
+    background-color: #fffdf5f7;
+    
+  }
+  .MobileContainer2a {
+    width: 60vw;
+    height: fit-content;
+    margin-top:10px;
+  }
+  .MobileContainer3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: fit-content;
+    background-color: #fffdf5f7;
+    /* background-color: #e3f1ffd0; */
+  }
+  .MobileContainer3a {
+    width: 94vw;
+    height: fit-content;
+    font-family: "Chelsea Market", cursive;
+  }
+  .MobileContainer4{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-content: space-around;
+    width: 100vw;
+    height:fit-content;
+    
+  }
+  .MobileContainer4a {
+      width:150px;
+      height:183px;
+      /* background-color: white; */
+      margin-top:20px;
+      box-shadow:0px 1px 3px rgb(110, 110, 110);
+      
+  }
+  .MobileContainer5{
+    display:flex;
+    flex-direction:row;
+    width:100vw;
+    height:fit-content;
+    /* background-color: #dfe3e7e7; */
+    justify-content: center;
+    align-items: center;
+    margin-top:10px;
+    
+  }
+  .MobileContainer5a{
+    width:315px;
+    height:150px;
+    background-color: white;
+    border-radius:15px;
+    box-shadow:0px 1px 2px rgb(122, 122, 122);
+  }
+  .Mobilefooter{
+    display: flex;
+    height:fit-content;
+    background-color: #000000;
+    width:100vw;
+    justify-content: center;
+    color: white;
+    padding:10px 0px;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+}
+
+

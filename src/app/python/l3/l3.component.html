@@ -1,0 +1,128 @@
+<div class="containercss">
+    <div class="item1" id="item-leftbox">
+        <app-desktop-nav></app-desktop-nav>
+    </div>
+
+    <div class="item2">
+        <div class="item2-div" id="item2-div-1">
+          <i class="bi bi-house svgcss" style="float:left;margin-left:20px;" routerLink="/Home"></i>
+
+          Input Operation
+          <a class="bi bi-list svgcss" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                  aria-controls="offcanvasExample" style="float:right;margin-right:15px;">
+          </a>
+          
+
+        </div>
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+
+            <app-mobile-nav></app-mobile-nav>
+
+        </div>
+
+        
+          <div class="item2-div">
+            <h3 id="titlepadding">1. How input() works in Python</h3>
+            <div class="codebox">
+              <pre>
+      <span class="str">c</span><span class="pun">=</span><span class="str">input</span><span class="pln">(</span><span class="pln">)</span>
+      <span class="dec">print</span><span class="pln">(</span><span class="tag">"The value of c is : "</span><span class="pln">,</span><span class="dec">c</span><span class="pln">)</span>
+</pre>
+            </div>
+            <h3 id="titlepadding">Output :</h3>
+            <div class="codepadding">
+              <p>
+                2 <br />
+                The value of c is : 2
+              </p>
+            </div>
+            <h5 id="notepadding">Note :</h5>
+            <div class="notediv">
+              <ol type="a">
+                <li>
+                  We use <span class="atn">input()</span> function to take input from
+                  user.
+                </li>
+                <li>
+                  By default input() takes the user's input in a
+                  <span class="atn">string</span>.
+                </li>
+              </ol>
+            </div>
+            
+          </div>
+          <div class="item2-div">
+            <h3 id="titlepadding">2. Get input from user with a prompt</h3>
+            <div class="codebox">
+              <pre>
+      <span class="str">X</span><span class="pun">=</span><span class="str">input</span><span class="pln">(</span><span class="tag">"Enter your name : "</span><span class="pln">)</span>
+      <span class="dec">print</span><span class="pln">(</span><span class="tag">"Hello"</span><span class="pln">,</span><span class="dec">X</span><span class="pln">)</span>      
+</pre>
+            </div>
+            <h3 id="titlepadding">Output :</h3>
+            <div class="codepadding">
+              <p>
+                Enter your name : Sachin <br />
+                Hello Sachin
+              </p>
+            </div>
+            <h5 id="notepadding">Note :</h5>
+            <div class="notediv">
+              <ol type="a">
+                <li>
+                  Here we use <span class="atn"> input(prompt) </span> function to
+                  take input from user.
+                </li>
+                <li>
+                  <span class="atn"> prompt </span> : It is the string we wish to display
+                  on the screen. It is optional.
+                </li>
+              </ol>
+            </div>
+            
+          </div>
+      
+          <div class="item2-div">
+            <h3 id="titlepadding">3. Get input from user using data types :</h3>
+            <div class="codebox">
+              <pre>
+      <span class="str">a</span><span class="pun">=</span><span class="str">int</span><span class="pln">(</span><span class="str"></span><span class="str">input</span><span class="pln">(</span><span class="tag">"Enter First Number : "</span><span class="pln">))</span>
+      <span class="str">b</span><span class="pun">=</span><span class="str">int</span><span class="pln">(</span><span class="str">input</span><span class="pln">(</span><span class="tag">"Enter Second Number : "</span><span class="pln">))</span>
+      <span class="str">c</span><span class="pun">=</span><span class="str">a</span><span class="atn">+</span><span class="str">b</span>
+      <span class="dec">print</span><span class="pln">(</span><span class="tag">"The value of c is : "</span><span class="pln">,</span><span class="tag">c</span><span class="pln">)</span>      
+</pre>
+            </div>
+            <h3 id="titlepadding">Output :</h3>
+            <div class="codepadding">
+              <p>
+                Enter First Number : 5<br />
+                Enter Second Number : 4<br />
+                The value of c is : 9
+              </p>
+            </div>
+            <h5 id="notepadding">Note :</h5>
+            <div class="notediv">
+              <ol type="a">
+                <li>
+                  To take the input in the form of integer you need to use
+                  <span class="atn"> int() </span> along with input function.
+                </li>
+                <li>
+                  You can also use <span class="atn">float</span> ,
+                  <span class="atn">list </span>, <span class="atn">tuple</span> along
+                  with the input function.
+                </li>
+              </ol>
+            </div>
+           
+          </div>
+
+
+        
+
+
+
+    </div>
+</div>

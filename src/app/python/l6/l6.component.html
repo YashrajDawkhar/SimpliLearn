@@ -1,0 +1,666 @@
+<div class="containercss">
+  <div class="item1" id="item-leftbox">
+    <app-desktop-nav></app-desktop-nav>
+  </div>
+
+  <div class="item2">
+    <div class="item2-div" id="item2-div-1">
+      <i class="bi bi-house svgcss" style="float:left;margin-left:20px;" routerLink="/Home"></i>
+
+      Operators
+            <a class="bi bi-list svgcss" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                    aria-controls="offcanvasExample" style="float:right;margin-right:15px;">
+            </a>
+
+      
+    </div>
+
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <app-mobile-nav></app-mobile-nav>
+    </div>
+
+    <div class="item2-div">
+      <h3 id="titlepadding">Operators:</h3>
+      <div class="codepadding">
+        <ol>
+          <li>
+            Operators are used to perform operations on variables and values .
+          </li>
+          <li>
+            For example <b>+ , - , * </b>and <b>/</b> are used for performing
+            arithmatic operation.
+          </li>
+          <li>
+            Python divides the operators in the following groups:
+            <ul type="circle">
+              <li>Arithmetic Operators</li>
+              <li>Comparison Operators</li>
+              <li>Logical Operators</li>
+              <li>Bitwise Operators</li>
+              <li>Assignment Operators</li>
+              <li>Membership Operators</li>
+              <li>Identity Operators</li>
+              <li>Modulus Operators</li>
+              <li>String Operators</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="item2-div">
+      <h3 id="titlepadding">1. Arithmetic Operators:</h3>
+      <p>
+        Arithmetic operators are used with numeric values to perform common
+        mathematical operations
+      </p>
+      <div class="tablecss">
+        <table class="table table-bordered border-primary">
+          <tbody>
+            <tr>
+              <th>Sr. No.</th>
+              <th>Operators</th>
+              <th>Meaning</th>
+              <th>Example</th>
+            </tr>
+
+            <tr>
+              <td>1</td>
+              <td>+</td>
+              <td>
+                Addition operator is used for performing addition of two numbers
+              </td>
+              <td>10+20=30</td>
+            </tr>
+
+            <tr>
+              <td>2</td>
+              <td>-</td>
+              <td>Subtraction operator is used for performing subtraction</td>
+              <td>20-10=10</td>
+            </tr>
+
+            <tr>
+              <td>3</td>
+              <td>*</td>
+              <td>
+                Multiplication operator is used for performing multiplication
+              </td>
+              <td>20*10=200</td>
+            </tr>
+
+            <tr>
+              <td>4</td>
+              <td>/</td>
+              <td>
+                Division operator is used for performing division of two numbers
+              </td>
+              <td>20/10=2</td>
+            </tr>
+
+            <tr>
+              <td>5</td>
+              <td>%</td>
+              <td>Mod operator returns the remainder value</td>
+              <td>10%2=0</td>
+            </tr>
+
+            <tr>
+              <td>6</td>
+              <td>**</td>
+              <td>This is an exponentiation operator(power)</td>
+              <td>2**3=8</td>
+            </tr>
+
+            <tr>
+              <td>7</td>
+              <td>//</td>
+              <td>
+                This is floor division operator. In this operation the result is
+                the quotient in which the digits after the decimal point are
+                removed
+              </td>
+              <td>10//3=3</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="item2-div">
+      <h3 id="titlepadding">2. Comparision Operators:</h3>
+      <p>Comparision operators are used to compare two values:</p>
+      <div class="tablecss">
+        <table class="table table-bordered border-primary">
+          <tbody>
+            <tr>
+              <th>Sr.No.</th>
+              <th>Operators</th>
+              <th>Meaning</th>
+              <th>Example</th>
+            </tr>
+
+            <tr>
+              <td>1</td>
+              <td>==</td>
+              <td>If two values are equal then condition becomes true</td>
+              <td>10==20<br />False</td>
+            </tr>
+
+            <tr>
+              <td>2</td>
+              <td>!=</td>
+              <td>
+                If two operands are not equal then the condition becomes true
+              </td>
+              <td>20!=10 <br />True</td>
+            </tr>
+
+            <tr>
+              <td>3</td>
+              <td>&lt;&gt;</td>
+              <td>
+                This is similar to <b>!=</b> That means if two values are not
+                equal then it return true
+              </td>
+              <td>20&lt;&gt;10 <br />True</td>
+            </tr>
+
+            <tr>
+              <td>4</td>
+              <td>&lt;</td>
+              <td>
+                This is less than operator. If left operand is less than the
+                right operator then the return value is true
+              </td>
+              <td>20&lt;10<br />False</td>
+            </tr>
+
+            <tr>
+              <td>5</td>
+              <td>&gt;</td>
+              <td>
+                This is greater than operator. If left operand is greater than
+                the right operator then the return value is true
+              </td>
+              <td>20&gt;10 <br />True</td>
+            </tr>
+
+            <tr>
+              <td>6</td>
+              <td>&lt;=</td>
+              <td>
+                This is less than equal to operator. If left operand is less
+                than the right operator or equal to right operator then the
+                return value is true
+              </td>
+              <td>
+                10&lt;=10<br />
+                True
+              </td>
+            </tr>
+
+            <tr>
+              <td>7</td>
+              <td>&gt;=</td>
+              <td>
+                This is greater than equal to operator. If left operand is
+                greater than the right operator or equal to right operator then
+                the return value is true
+              </td>
+              <td>
+                20&lt;=10<br />
+                True
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="item2-div">
+      <h3 id="titlepadding">3. Logical Operators:</h3>
+      <div class="codepadding">
+        <p>Logical operators are used to combine conditional statements:</p>
+      </div>
+      <div class="tablecss">
+        <table class="table table-bordered border-primary">
+          <tbody>
+            <tr>
+              <th>Sr. No.</th>
+              <th>Operators</th>
+              <th>Meaning</th>
+              <th>Example</th>
+            </tr>
+
+            <tr>
+              <td>1</td>
+              <td>and</td>
+              <td>
+                If both the operands are true then the entire expression is true
+              </td>
+              <td>
+                a=5 <br />
+                a&gt;2 and a&lt; 3<br />False
+              </td>
+            </tr>
+
+            <tr>
+              <td>2</td>
+              <td>or</td>
+              <td>If either first or second operand is true</td>
+              <td>
+                a=5 <br />
+                a&gt;2 and a&lt; 3<br />True
+              </td>
+            </tr>
+
+            <tr>
+              <td>3</td>
+              <td>not</td>
+              <td>
+                If the operand is false then the entire expression is true
+              </td>
+              <td>a=5 <br />not (a&gt;2 and a&lt; 3)<br />True</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="item2-div">
+      <h3 id="titlepadding">4. Bitwise Operators:</h3>
+      <div class="codepadding">
+        <ul>
+          <li>Bitwise operators are used to compare (binary) numbers:</li>
+          <li>
+            In the table below:
+            <ul>
+              <li>a=010 (in binary)</li>
+              <li>b=011 (in binary)</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="tablecss">
+        <table class="table table-bordered border-primary">
+          <tbody>
+            <tr>
+              <th>Sr. No.</th>
+              <th>Operators</th>
+              <th>Name</th>
+              <th>Meaning</th>
+              <th>Example</th>
+            </tr>
+
+            <tr>
+              <td>1</td>
+              <td>&</td>
+              <td>AND</td>
+              <td>returns 1 if both the bits is 1 .</td>
+              <td>a&b=010</td>
+            </tr>
+
+            <tr>
+              <td>2</td>
+              <td>|</td>
+              <td>OR</td>
+              <td>return 1 if one of two bits is 1.</td>
+              <td>a|b=011</td>
+            </tr>
+
+            <tr>
+              <td>3</td>
+              <td>~</td>
+              <td>NOT</td>
+              <td>Inverts all the bits.</td>
+              <td>~a=101</td>
+            </tr>
+
+            <tr>
+              <td>4</td>
+              <td>^</td>
+              <td>XOR</td>
+              <td>return 1 if only one of two bits is 1</td>
+              <td>a ^ b=001</td>
+            </tr>
+
+            <tr>
+              <td>5</td>
+              <td>&lt;&lt;</td>
+              <td>Zero fill left shift</td>
+              <td>
+                Shifts the bits of the number to the left and fills 0 on void
+                left as a result
+              </td>
+              <td>
+                a&lt;&lt;1=100 <br />Note:<span class="atn">&lt;&lt;1</span>
+                means make left by one position and add a tailing zero<br />
+                here a=010 after left shift it becomes 100
+              </td>
+            </tr>
+
+            <tr>
+              <td>6</td>
+              <td>&gt;&gt;</td>
+              <td>Signed right shift</td>
+              <td>
+                Shifts the bits of the number to the right and fills 0 on void
+                left as a result
+              </td>
+              <td>
+                a&gt;&gt;1=001<br />Note:<span class="atn">&gt;&gt;1</span>
+                means make right shift by one position and add a tailing zero
+                <br />here a=010 after left shift it becomes 001
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="item2-div">
+      <h3 id="titlepadding">5. Assignment Operators:</h3>
+
+      <p style="padding-left: 20px">
+        Arithmetic operators are used to assign the values to variables
+      </p>
+      <div class="tablecss">
+        <table class="table table-bordered border-primary">
+          <tbody>
+            <tr>
+              <th>Sr. No.</th>
+              <th>Operators</th>
+              <th>Example</th>
+              <th>Same As</th>
+            </tr>
+
+            <tr>
+              <td>1</td>
+              <td>=</td>
+              <td>a=5</td>
+              <td>a=5</td>
+            </tr>
+
+            <tr>
+              <td>2</td>
+              <td>+=</td>
+              <td>a+=5</td>
+              <td>a=a+5</td>
+            </tr>
+
+            <tr>
+              <td>3</td>
+              <td>-=</td>
+              <td>a-=5</td>
+              <td>a=a-5</td>
+            </tr>
+
+            <tr>
+              <td>4</td>
+              <td>*=</td>
+              <td>a*=5</td>
+              <td>a=a*5</td>
+            </tr>
+
+            <tr>
+              <td>5</td>
+              <td>/=</td>
+              <td>a/=5</td>
+              <td>a=a/5</td>
+            </tr>
+
+            <tr>
+              <td>6</td>
+              <td>%=</td>
+              <td>a%=5</td>
+              <td>a=a%5</td>
+            </tr>
+
+            <tr>
+              <td>7</td>
+              <td>//=</td>
+              <td>a//=5</td>
+              <td>a=a//5</td>
+            </tr>
+
+            <tr>
+              <td>8</td>
+              <td>**=</td>
+              <td>a**=5</td>
+              <td>a=a**5</td>
+            </tr>
+
+            <tr>
+              <td>9</td>
+              <td>&=</td>
+              <td>a&=5</td>
+              <td>a=a&5</td>
+            </tr>
+
+            <tr>
+              <td>10</td>
+              <td>|=</td>
+              <td>a|=5</td>
+              <td>a=a|5</td>
+            </tr>
+
+            <tr>
+              <td>11</td>
+              <td>^=</td>
+              <td>a^=5</td>
+              <td>a=a^5</td>
+            </tr>
+
+            <tr>
+              <td>12</td>
+              <td>&lt;&lt;=</td>
+              <td>a&lt;&lt;=5</td>
+              <td>a=a&lt;&lt;5</td>
+            </tr>
+
+            <tr>
+              <td>13</td>
+              <td>&gt;&gt;=</td>
+              <td>a&gt;&gt;=5</td>
+              <td>a=a&gt;&gt;5</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="item2-div">
+      <h3 id="titlepadding">6. Membership Operators:</h3>
+      <div class="codepadding">
+        <p>
+          Membership operators are used to find whether a value is a member of a
+          sequence such as or list
+        </p>
+      </div>
+      <div class="tablecss">
+        <table class="table table-bordered border-primary">
+            <tbody>
+                <tr>
+                    <th>Sr.No.</th>
+                    <th>Operators</th>
+                    <th>Meaning</th>
+                  </tr>
+        
+                  <tr>
+                    <td>1</td>
+                    <td>in</td>
+                    <td>
+                      It returns True if a sequence with specified value is present in
+                      the object.
+                    </td>
+                  </tr>
+        
+                  <tr>
+                    <td>2</td>
+                    <td>not in</td>
+                    <td>
+                      It returns True if a sequence with specified value is not present
+                      in the object.
+                    </td>
+                  </tr>
+            </tbody>
+          
+        </table>
+      </div>
+      <h3 id="titlepadding">Examples:</h3>
+      <div class="codebox">
+        <pre>
+<span class="atv"># Membership operators</span>
+    <span class="str">color</span><span class="pun">=</span><span class="str">[</span><span class="pln">'red'</span><span class="str">,</span><span class="pln">'blue'</span><span class="str">,</span><span class="pln">'green'</span><span class="str">]</span>
+    <span class="dec">print</span><span class="pln">(</span><span class="tag">'blue'</span><span class="pln"> in </span><span class="tag">color</span><span class="pln">)</span>
+
+    <span class="dec">print</span><span class="pln">(</span><span class="tag">'yellow'</span><span class="pln"> in </span><span class="tag">color</span><span class="pln">)</span>
+
+    <span class="dec">print</span><span class="pln">(</span><span class="tag">'yellow'</span><span class="pln"> not in </span><span class="tag">color</span><span class="pln">)</span>
+</pre>
+      </div>
+      <h3 id="titlepadding">Output:</h3>
+      <div class="codepadding">
+        <p>
+          True <br />
+          False <br />
+          True
+        </p>
+      </div>
+    </div>
+
+    <div class="item2-div">
+      <h3 id="titlepadding">7. Identity Operators:</h3>
+      <div class="codepadding">
+        <p>
+          Identity operators are used to determine whether a value is of a
+          certain variable contains.
+        </p>
+      </div>
+      <div class="tablecss">
+        <table class="table table-bordered border-primary">
+            <tbody>
+                <tr>
+                    <th>Sr.No.</th>
+                    <th>Operators</th>
+                    <th>Meaning</th>
+                  </tr>
+        
+                  <tr>
+                    <td>1</td>
+                    <td>is</td>
+                    <td>
+                      It returns True if both the operand point to point to same memory
+                      location.
+                    </td>
+                  </tr>
+        
+                  <tr>
+                    <td>2</td>
+                    <td>not is</td>
+                    <td>
+                      It returns True if both the operand point to different memory
+                      location.
+                    </td>
+                  </tr>
+            </tbody>
+          
+        </table>
+      </div>
+      <h3 id="titlepadding">Example:</h3>
+      <div class="codebox">
+        <pre>
+    <span class="atv"># Identity operators</span>
+    <span class="str">color1</span><span class="pun">=</span><span class="str">[</span><span class="pln">'red'</span><span class="str">,</span><span class="pln">'blue'</span><span class="str">,</span><span class="pln">'green'</span><span class="str">]</span>
+    <span class="str">color2</span><span class="pun">=</span><span class="str">[</span><span class="pln">'red'</span><span class="str">,</span><span class="pln">'blue'</span><span class="str">,</span><span class="pln">'green'</span><span class="str">]</span>
+    <span class="str">color3</span><span class="pun">=</span><span class="str">color1</span>
+
+    <span class="dec">print</span><span class="pln">(</span><span class="tag">color1</span><span class="pln"> is </span><span class="tag">color2</span><span class="pln">)</span>
+
+    <span class="dec">print</span><span class="pln">(</span><span class="tag">color1</span><span class="pln"> is </span><span class="tag">color3</span><span class="pln">)</span>
+
+    <span class="dec">print</span><span class="pln">(</span><span class="tag">color1</span><span class="pln"> not is </span><span class="tag">color2</span><span class="pln">)</span></pre>
+      </div>
+      <h3 id="titlepadding">Output:</h3>
+      <div class="codepadding">
+        <p>
+          False <br />
+          True<br />
+          True
+        </p>
+      </div>
+    </div>
+
+    <div class="item2-div">
+      <h3 id="titlepadding">8. Modulus Operators:</h3>
+      <div class="codepadding">
+        <ul>
+          <li>
+            The <span class="atn">% </span>operator that gives the remainder
+            from the division of first argument by second
+          </li>
+          <li>
+            The <span class="atn">// </span>operator is used for floor division
+            returns the integral part of the quotient.
+          </li>
+        </ul>
+      </div>
+      <h3 id="titlepadding">Example:</h3>
+      <div class="codebox">
+        <pre>
+    <span class="str">a</span><span class="pun">=</span><span class="str">10</span>
+    <span class="str">b</span><span class="pun">=</span><span class="str">3</span>
+    <span class="str">c</span><span class="pun">=</span><span class="str">a</span><span class="atn">%</span><span class="str">b</span>
+    <span class="dec">print</span><span class="pln">(</span><span class="tag">c</span><span class="pln">)</span>
+
+    <span class="str">a</span><span class="pun">=</span><span class="str">10.33</span>
+    <span class="str">b</span><span class="pun">=</span><span class="str">3.3</span>
+    <span class="str">c</span><span class="pun">=</span><span class="str">a</span><span class="atn">//</span><span class="str">b</span>
+    <span class="dec">print</span><span class="pln">(</span><span class="tag">c</span><span class="pln">)</span></pre>
+      </div>
+      <h3 id="titlepadding">Output:</h3>
+      <div class="codepadding">
+        <p>1<br />3.0</p>
+      </div>
+    </div>
+
+    <div class="item2-div">
+      <h3 id="titlepadding">9. String Operators:</h3>
+      <div class="codepadding">
+        <ul>
+          <li>String is a collection of characters.</li>
+          <li>
+            In Python it is possible to perform the concatenation and repetition
+            operations on strings using the operators like<span class="atn">
+              + </span
+            >and<span class="atn">*</span>.
+          </li>
+        </ul>
+      </div>
+      <h3 id="titlepadding">Example:</h3>
+      <div class="codebox">
+        <pre>
+    <span class="str">str1<span class="pun">=</span>"My"</span>
+    <span class="str">str2<span class="pun">=</span>"String"</span>
+    <span class="dec">print</span><span class="pln">(</span><span class="tag">str1</span><span class="pun">+</span><span class="tag">str2</span><span class="pln">)</span>
+    <span class="dec">print</span><span class="pln">(</span><span class="tag">str2</span><span class="pun">*</span><span class="tag">3</span><span class="pln">)</span></pre>
+      </div>
+
+      <h3 id="titlepadding">Output :</h3>
+      <div class="codepadding">
+        <p>
+          My<br />
+          String<br />
+          MyString<br />
+          StringStringString
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

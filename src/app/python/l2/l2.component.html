@@ -1,0 +1,212 @@
+<div class="containercss">
+    <div class="item1" id="item-leftbox">
+        <app-desktop-nav></app-desktop-nav>
+    </div>
+
+    <div class="item2">
+        <div class="item2-div" id="item2-div-1">
+            <i class="bi bi-house svgcss" style="float:left;margin-left:20px;" routerLink="/Home"></i>
+
+            Data Types
+            <a class="bi bi-list svgcss" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                    aria-controls="offcanvasExample" style="float:right;margin-right:15px;">
+            </a>
+            
+        </div>
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+
+            <app-mobile-nav></app-mobile-nav>
+
+        </div>
+
+        <div class="item2-div">
+            
+            <div class="codepadding">
+            <ol>
+               <li>Data types are used for define type of Variable</li>
+               <li>There are 5 types of Data types</li>
+               <ul>
+                    <li>Numeric </li>
+                    <li>String </li>
+                    <li>List</li>
+                    <li>Tuple</li>
+                    <li>Dictionary</li>
+                </ul>
+               </ol>
+            </div>
+        </div>
+
+        <div class="item2-div">
+            <h3 id="titlepadding">1. Numeric :</h3>
+            <div class="codebox">
+                <pre>
+    <span class="atv"># Create variable With integral variable</span>
+    <span class="str">a<span class="pun">=</span>10</span>
+    <span class="dec">print</span><span class="pln">(</span><span class="tag">"Type of variable is :<span class="tag">"</span> <span class="dec">,</span>type</span><span class="pln">(a)</span><span class="pln">)</span>
+
+    <span class="atv"># Create variable With float variable</span>
+    <span class="str">b<span class="pun">=</span>34.67</span>
+    <span class="dec">print</span><span class="pln">(</span><span class="tag">"Type of variable is :<span class="tag">"</span> <span class="dec">,</span>type</span><span class="pln">(b)</span><span class="pln">)</span>
+
+    <span class="atv"># Create variable With complex variable</span>
+    <span class="str">c<span class="pun">=</span>10+8j</span>
+    <span class="dec">print</span><span class="pln">(</span><span class="tag">"Type of variable is :<span class="tag">"</span> <span class="dec">,</span>type</span><span class="pln">(c)</span><span class="pln">)</span>
+</pre>
+            </div>
+
+            <h3 id="titlepadding">Output :</h3>
+            <div class="codepadding">
+                <pre>
+ Type of variable is :  &lt;class 'int'&gt;
+ Type of variable is :  &lt;class 'float'&gt;
+ Type of variable is :  &lt;class 'complex'&gt;
+</pre>
+
+            </div>
+            <h5 id="notepadding">Note :</h5>
+            <div class="notediv">
+                <ol type="1">
+                    <li><span class="atn">int</span>: holds signed integers of non limited length.</li>
+                    <li><span class="atn">long</span>: holds long integer</li>
+                    <li><span class="atn">float</span>: holds floating precision numbers and it's accurate upto 15
+                        decimal places.</li>
+                    <li><span class="atn">complex</span>: holds complex numbers</li>
+                </ol>
+
+            </div>
+            <br>
+        </div>
+
+        <div class="item2-div">
+            <h3 id="titlepadding">2. String :</h3>
+            <div class="codebox">
+                <pre>
+    <span class="str">str1<span class="pun">=</span>"My"</span>
+    <span class="str">str2<span class="pun">=</span>"String"</span>
+    <span class="dec">print</span><span class="pln">(<span class="tag">str1</span>)</span>
+    <span class="dec">print</span><span class="pln">(<span class="tag">str2</span>)</span>
+    <span class="dec">print</span><span class="pln">(<span class="tag">str1<span class="pun">+</span>str2</span>)</span>
+    <span class="dec">print</span><span class="pln">(<span class="tag">str2<span class="pun">*</span>3</span>)</span>
+</pre>
+
+
+            </div>
+
+            <h3 id="titlepadding">Output :</h3>
+            <div class="codepadding">
+                <pre>
+My
+String
+MyString
+StringStringString
+</pre>
+
+            </div>
+            <h5 id="notepadding">Note :</h5>
+            <div class="notediv">
+                <ol type="a">
+                    <li>String is a collection of characters</li>
+                    <li> we can use <span class="atn">' '</span> , <span class="atn">" "</span> or<span class="atn"> '''
+                            '''</span> to define string </li>
+                    <li><span class="atn">+</span> operator is used to concatenate two string</li>
+                    <li><span class="atn">*</span> operator is used as a repetition operator</li>
+                </ol>
+
+            </div>
+            <br>
+        </div>
+
+        <div class="item2-div">
+            <h3 id="titlepadding">3. List :</h3>
+            <div class="codebox">
+                <pre>
+    <span class="atv"># List of only integers</span>
+    <span class="str">a<span class="pun">=</span>[<span class="str">10</span><span class="pln">,</span>20<span class="pln">,</span>30<span class="pln">,</span>40]</span>
+    <span class="dec">print</span><span class="pln">(<span class="tag">a</span>)</span>
+
+    <span class="atv"># List of only String</span>
+    <span class="str">b<span class="pun">=</span>[<span class="pln">'sun'</span>,<span class="pln">'mon'</span>,<span class="pln">'tue'</span>,<span class="pln">'thu'</span>]</span>
+    <span class="dec">print</span><span class="pln">(<span class="tag">b</span>)</span>
+
+    <span class="atv"># List of both string and integers</span>
+    <span class="str">c<span class="pun">=</span>[10,<span class="pln">'red'</span>,65,<span class="pln">'blue'</span>,54]</span>
+    <span class="dec">print</span><span class="pln">(<span class="tag">c</span>)</span>
+</pre>
+
+
+            </div>
+
+            <h3 id="titlepadding">Output :</h3>
+            <div class="codepadding">
+                <pre>
+[10, 20, 30, 40]
+['sun', 'mon', 'tue', 'thu']
+[10, 'red', 65, 'blue', 54]
+</pre>
+
+            </div>
+            <h5 id="notepadding">Note :</h5>
+            <div class="notediv">
+                <ol type="a">
+                    <li>It can simultaneously holds different types of data in list</li>
+                    <li>It is ordered sequence of some data written using square brackets(<span class="atn">[]</span>)
+                        and commas(<span class="atn">,</span>) </li>
+
+                </ol>
+
+            </div>
+            <br>
+        </div>
+        <div class="item2-div">
+            <h3 id="titlepadding">4. Tuple :</h3>
+            <div class="codebox">
+
+                <pre>
+    <span class="atv"># List of only integers</span>
+    <span class="str">a<span class="pun">=</span>(<span class="str">10</span><span class="pln">,</span>20<span class="pln">,</span>30<span class="pln">,</span>40)</span>
+    <span class="dec">print</span><span class="pln">(<span class="tag">a</span>)</span>
+                    
+    <span class="atv"># List of only String</span>
+    <span class="str">b<span class="pun">=</span>(<span class="pln">'sun'</span>,<span class="pln">'mon'</span>,<span class="pln">'tue'</span>,<span class="pln">'thu'</span>)</span>
+    <span class="dec">print</span><span class="pln">(<span class="tag">b</span>)</span>
+                    
+    <span class="atv"># List of both string and integers</span>
+    <span class="str">c<span class="pun">=</span>(10,<span class="pln">'red'</span>,65,<span class="pln">'blue'</span>,54)</span>
+    <span class="dec">print</span><span class="pln">(<span class="tag">c</span>)</span>
+</pre>
+
+
+            </div>
+
+            <h3 id="titlepadding">Output :</h3>
+            <div class="codepadding">
+                <pre>
+(10, 20, 30, 40)
+('sun', 'mon', 'tue', 'thu')
+(10, 'red', 65, 'blue', 54)
+</pre>
+
+            </div>
+            <h5 id="notepadding">Note :</h5>
+            <div class="notediv">
+                <ol type="a">
+                    <li>Tuple is a collection of data types</li>
+                    <li>Tuples are sperated by ( <span class="atn">, </span>)commas and element enclosed in <span
+                            class="atn">() </span> parenthesis </li>
+                    <li>Tuple are <span class="atn">immutable</span> or read-only: we cannot modify the size and value
+                        of tuples</li>
+
+                </ol>
+
+            </div>
+            <br>
+        </div>
+
+        
+
+
+
+    </div>
+</div>

@@ -275,6 +275,7 @@ li.list-group-item.leftnavmobile:active {
 /* ------------------ scrollbar --------------------- */
 body::-webkit-scrollbar {
   width: 0.5em;
+  height:0em;
   background-color: #a7f4f783;
 }
 
