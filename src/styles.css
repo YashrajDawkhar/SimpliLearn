@@ -1,1 +1,290 @@
-/* You can add global styles to this file, and also import other style files */
+/* ...............................   containercss Properties             ...............................  */
+
+.containercss {
+  
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+/* .item1{
+    border: 2px red solid;
+    
+  } */
+#item-leftbox {
+  /* padding: 2px 10px 0px 2px; */
+  padding: 0px 10px 0px 0px;
+}
+#item-leftbox {
+  display: none;
+}
+/* min-width: 709px */
+@media all and (min-width: 929px) {
+  #item-leftbox {
+    display: block;
+  }
+}
+/* max-width: 708px */
+@media all and (max-width: 929px) {
+  .containercss {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* .....................................Sidenav item1 property.................................................................. */
+.sidenav {
+  width: 18vw;
+
+  background-color: orange;
+  /* background: linear-gradient(to left, #FB7C29, #f8b328); */
+  overflow-x: hidden;
+  /* padding: 14px 11px; */
+ 
+  height: 93vh;
+  position: fixed;
+  font-family: 'Balsamiq Sans', cursive;
+  padding-top:10px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 1.3vw;
+  color: #020007;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #ffffff;
+}
+
+
+.sidenav a.active
+{
+    color:rgb(255, 0, 0);
+    background-color:white;
+    margin-right:10px;
+    border-radius:0px 25px 25px 0px;
+}
+
+/* .........................................Property of right side main page........................... */
+
+.item2 {
+  /* border: 2px rgb(4, 0, 255) solid; */
+  display: grid;
+  
+  grid-auto-rows: minmax(fit-content, auto);
+}
+/* for big screen 768px */
+@media all and (min-width:930px) {
+  .item2 {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    grid-gap: 15px;
+  }
+  .item2-div{
+    border: 1px solid rgb(0, 0, 0);
+    background-color: #fff8b6b0;
+  }
+  /* .item2-div {
+    
+    box-shadow: -4px 6px 20px #4122f15d;
+    box-shadow: 5px 10px 18px #4122f15d; 
+    
+  } */
+  .item2-div:hover {
+    
+    box-shadow: 5px 10px 18px #6c54f777;
+    
+    
+  }
+  
+body {
+  background-color: #d1eaff7c;
+  
+}
+}
+
+/* for mobile 769 px*/
+@media all and (max-width: 929px) {
+  .item2 {
+    grid-gap: 12px;
+    margin:5px 10px 15px 10px;
+  }
+  .item2-div{
+    box-shadow: 0px 0px 2px #1b0d47;
+    background-color: #fff8b6b0;
+  }
+  
+  body {
+    background-color: #ebf8fc;
+    
+    
+  }
+  #item2-div-1{
+    position: sticky;
+    z-index:1;
+    
+    /* background: linear-gradient(to right, #faa32a, #ff2424, #a936f5); */
+    background-color: orange;
+    box-shadow:0px 1px 3px rgb(255, 188, 65);
+    margin:-5px -10px 0px -10px;
+    box-shadow: 0px 0px 0px #1b0d47;
+    color: white;
+    padding-top:5px;
+    
+  }
+}
+
+.item2-div {
+  /* background-color: #fff8b6b0; */
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+
+
+
+#item2-div-1 {
+  font-family: "Bubblegum Sans", cursive;
+  font-size: 30px;
+  text-align: center;
+  /* padding-right: 20px; */
+  border-radius: 0px;
+  
+  top: 0;
+  /* margin:-10px -10px -5px -15px;
+  background-color: #38002f; */
+}
+
+.codepadding {
+  background-color: #fac88e49;
+  box-sizing: border-box;
+  padding-left: 40px;
+  font-size: 19px;
+}
+
+#titlepadding {
+  font-family: "New Tegomin", serif;
+  padding-left: 20px;
+  color: rgb(94, 9, 128);
+  
+  font-size: 28px;
+}
+
+#notepadding {
+  padding-left: 20px;
+  color: rgb(236, 57, 57);
+}
+
+.notediv {
+  background-color: #ff646438;
+  box-sizing: border-box;
+  padding-left: 40px;
+  font-size: 18px;
+}
+
+/* ...........................left Menu for mobile and tablet ................... */
+
+.svgcss {
+  display: none;
+}
+
+@media all and (max-width: 930px) {
+  .svgcss {
+    display: block;
+  }
+}
+
+.bi-list {
+  float: left;
+  font-size: 35px;
+  /* color: #2200b8; */
+  color: white;
+  padding-left: 10px;
+}
+
+.offcanvas {
+  width: 280px;
+  color: rgb(14, 0, 0);
+  background-color: #e4e8fa;
+}
+/* 
+.list-group-item.active.leftnavmobile{
+  background-color: #052feba1;
+  color:white;
+} */
+.list-group-item.leftnavmobile {
+  background-color: #f7843800;
+}
+
+li.list-group-item.leftnavmobile:active {
+  background-color: #7b2bfdb4;
+  color: rgb(255, 255, 255);
+}
+
+/* ...........................Code Box property   ................... */
+
+.codebox {
+  background-color: rgb(249, 250, 231);
+  overflow: auto;
+  margin: 10px;
+  font-size: 25px;
+}
+@media (max-width: 768px) {
+  .codebox {
+    font-size: 18px;
+  }
+}
+
+
+
+/* .codebox:hover {
+  border: 1px solid red;
+} */
+
+.tag {
+  color: rgb(0, 0, 196);
+}
+.pln {
+  color: rgb(202, 0, 0);
+}
+
+.atn {
+  color: #f30775;
+}
+.pun {
+  color: coral;
+}
+.str {
+  color: darkmagenta;
+}
+
+.atv {
+  color: rgb(18, 126, 3);
+}
+.dec {
+  color: #c0015a;
+}
+/* --------------------- Table property ---------------- */
+.tablecss {
+  background-color: rgb(245, 255, 221);
+}
+
+/* ------------------ scrollbar --------------------- */
+body::-webkit-scrollbar {
+  width: 0.5em;
+  background-color: #a7f4f783;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background-color:orange;
+  
+}
+

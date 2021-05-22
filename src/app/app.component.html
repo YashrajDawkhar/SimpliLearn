@@ -1,29 +1,22 @@
+<ngx-loading-bar
+  [color]="'linear-gradient(to left, #9cecfb, #65c7f7, #0052d4)'"
+  [includeSpinner]="false"
+  [height]="'4px'"
+></ngx-loading-bar>
 
-   <div class="container-fluid d-none d-lg-block d-xl-none d-none d-xl-block">
-          <!-- header part -->
-          <div class="row" >
-        
-              <div class="col-sm-12">
-                <app-menu></app-menu>
-              </div>
-        
-          </div>
-          <!-- Body Part -->
-          <div class="row">
-            
-            <router-outlet></router-outlet>
-            
-          </div>
 
-         
 
-    </div>
-    <div class="container-fluid  	d-block d-sm-none 	d-none d-sm-block d-md-none 	d-none d-md-block d-lg-none " >
-      <div class="jumbotron jumbotron-fluid">
-        <div class="container">   
-          <img src="assets\MobileSizeImage\Desktop.jpg" class="img-fluid" alt="Responsive image">
-          <h1 class="display-5">Web Site Best Viewed On Large Screen</h1>
-          <p class="lead">Web site is best viewed on Desktop , Laptop You can use any browser such chrome , Internet Explore latest version .</p>
-        </div>
-      </div>
-    </div>
+<div class="containerforwebsite">
+  <div class="item1">
+    <app-menu></app-menu>
+    
+  </div>
+  <div class="item">
+    <router-outlet ></router-outlet>
+  </div>
+</div>
+
+
+<app-go-to-top></app-go-to-top>
+
+

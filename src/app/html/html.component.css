@@ -1,9 +1,10 @@
-.borderclass{
-    border: 5px red solid;
-    height: auto;
+.imagebox{
+    background-color: rgb(101, 238, 197);
 }
-.btn{
-    
-    width: 150px ;
-    
-}
+#Htmlcssparagraph {
+    font-family: "Rubik", sans-serif;
+    font-size: 21px;
+    color: #4b0c01;
+  }
+
+ 

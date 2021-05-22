@@ -1,0 +1,22 @@
+.containerforwebsite {
+  display: grid;
+
+  /* grid-template-rows:56px auto; */
+}
+.item1 {
+  top: 0px;
+  position: sticky;
+  z-index: 5;
+
+  display: none;
+}
+
+@media all and (min-width: 929px) {
+  .containerforwebsite {
+    grid-template-rows: 7vh auto;
+    
+  }
+  .item1 {
+    display: block;
+  }
+}
